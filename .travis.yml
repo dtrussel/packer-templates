@@ -4,6 +4,7 @@ language: minimal
 before_install:
   - sudo apt-get update -q
   - sudo apt-get install -q virtualbox --fix-missing
+  - sudo apt-get install -q virtualbox-dkms linux-headers-gcp
   - curl https://releases.hashicorp.com/packer/1.6.4/packer_1.6.4_linux_amd64.zip --output packer.zip
   - unzip packer.zip
 
