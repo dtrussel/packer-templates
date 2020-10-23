@@ -7,3 +7,6 @@ before_install:
   - unzip vagrant.zip
   - curl https://releases.hashicorp.com/packer/1.6.4/packer_1.6.4_linux_amd64.zip --output packer.zip
   - unzip packer.zip
+
+script:
+  - ./packer build templates/debian.json
