@@ -2,9 +2,8 @@ dist: focal
 language: minimal
 
 before_install:
-  - sudo apt-get -y install virtualbox
-  - curl https://releases.hashicorp.com/vagrant/2.2.10/vagrant_2.2.10_linux_amd64.zip --output vagrant.zip
-  - unzip vagrant.zip
+  - sudo apt-get update -q
+  - sudo apt-get install -q virtualbox --fix-missing
   - curl https://releases.hashicorp.com/packer/1.6.4/packer_1.6.4_linux_amd64.zip --output packer.zip
   - unzip packer.zip
 
