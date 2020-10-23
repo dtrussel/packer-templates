@@ -2,3 +2,6 @@ dist: bionic
 
 before_install:
   - sudo apt-get -y install virtualbox
+  - curl https://releases.hashicorp.com/vagrant/2.2.10/vagrant_2.2.10_linux_amd64.zip --output vagrant.zip
+  - unzip vagrant.zip
+  
